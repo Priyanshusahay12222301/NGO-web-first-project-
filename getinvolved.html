@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get Involved - SRMS NGO</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <header style="background-color: #333; padding: 20px;">
+    <img src="images (1).jpg" alt="Logo description">
+    <!-- Add your navigation bar here -->
+  </header>
+
+  <section class="get-involved-section">
+    <h2>Get Involved</h2>
+    <p>Thank you for your interest in supporting SRMS NGO. There are various ways you can get involved and make a difference in the lives of others.</p>
+
+    <div class="volunteer">
+      <h3>Volunteer with Us</h3>
+      <p>Join our dedicated team of volunteers and contribute your time and skills to help with various projects and activities. Whether you are a teacher, healthcare professional, or have other skills to offer, your support is invaluable.</p>
+      <button id="volunteerButton">Contact Us to Volunteer</button>
+    </div>
+
+    <div class="donate">
+      <h3>Donate for a Cause</h3>
+      <p>Your generous donations can make a significant impact on our programs. You can choose to donate a one-time contribution or become a regular supporter of our initiatives. Every contribution counts!</p>
+      <button id="donateButton">Donate Now</button>
+    </div>
+
+    <div class="events">
+      <h3>Attend our Events</h3>
+      <p>Stay updated with our upcoming events and participate in fundraising drives, awareness campaigns, and community gatherings. Your participation helps raise awareness and funds for our projects.</p>
+      <button>View Events</button>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="getinvolved.html">Get Involved</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 SRMS NGO. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <div id="donateModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeButton">&times;</span>
+      <h2>Donate Now</h2>
+      <form>
+        <!-- Add your donation form fields here -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" name="amount" required>
+        <button type="submit">Submit Donation</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    // Get the modal, the Donate Now button, and the close button
+    const modal = document.getElementById('donateModal');
+    const donateButton = document.getElementById('donateButton');
+    const closeButton = document.getElementById('closeButton');
+
+    // Function to display the modal when the Donate Now button is clicked
+    function openModal() {
+      modal.style.display = 'block';
+    }
+
+    // Function to close the modal when the close button is clicked
+    function closeModal() {
+      modal.style.display = 'none';
+    }
+
+    // Add event listeners for the Donate Now button and the close button
+    donateButton.addEventListener('click', openModal);
+    closeButton.addEventListener('click', closeModal);
+  </script>
+</body>
+</html>
